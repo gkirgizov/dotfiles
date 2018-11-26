@@ -1,0 +1,35 @@
+[colors]
+foreground = #073642
+foreground_bold = #073642
+foreground_dim = #657b83
+cursor = #586e75
+
+#background  = #fdf6e3
+background = rgba(253, 246, 227, 0.925)
+
+# if unset, will reverse foreground and background
+#highlight = #839496
+
+# dark things
+color15 = #002b36
+color7 = #073642
+color14 = #586e75
+color12 = #657b83
+
+# light things
+color8 = #fdf6e3
+color0 = #eee8d5
+color10 = #93a1a1
+color11 = #839496
+
+# color things
+color1 = #dc322f
+color2 = #859900
+color3 = #b58900
+color4 = #268bd2
+color5 = #d33682
+color6 = #2aa198
+color9 = #cb4b16
+color13 = #6c71c4
+
+# colors from color0 to color254 can be set

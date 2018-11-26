@@ -1,0 +1,20 @@
+source /usr/lib/zim/templates/zshrc
+source /etc/zsh/zimrc
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+#export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper_lazy.sh
+
+export BROWSER=/usr/bin/firefox
+
+# Change default compiler
+export CC=clang
+export CXX=clang++
+#export CC=gcc
+#export CXX=g++
+
+# For spacemacs/haskell/stack ...
+# export PATH=~/.local/bin:$PATH
+

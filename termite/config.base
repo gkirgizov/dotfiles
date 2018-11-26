@@ -1,0 +1,23 @@
+[options]
+#allow_bold = true
+audible_bell = true
+#clickable_url = true
+#dynamic_title = true
+scrollback_lines = 100000
+mouse_autohide = true
+#scroll_on_output = false
+#scroll_on_keystroke = true
+search_wrap = false
+#urgent_on_bell = true
+hyperlinks = true
+size_hints = true
+
+font = xos4 Terminus 12
+##font = Terminus (TTF) 12
+#font = Hack 10
+##font = OCRA 10
+##font = Fira Code Bold 10
+## https://be5invis.github.io/Iosevka/
+# font = Iosevka Medium 11
+# font = Source Code Pro Medium 10
+
