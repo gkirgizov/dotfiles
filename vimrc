@@ -23,7 +23,7 @@ runtime! archlinux.vim
 "endif
 
 "--------- Different settings ----------
-
+    
     " Reload vim
     "nnoremap <M-r> :so ~/.vimrc
 
@@ -62,19 +62,32 @@ runtime! archlinux.vim
     set mouse=a
     " Allow switching from unsaved buffers
     set hidden
+
     " Easier buffer switching
     nnoremap gb :ls<CR>:b<Space>
-    nnoremap <M-Tab> :bnext<CR>
-    nnoremap <M-S-Tab> :bprev<CR>
-    nnoremap <M-1> :buffer1<CR>
-    nnoremap <M-2> :buffer2<CR>
-    nnoremap <M-3> :buffer3<CR>
-    nnoremap <M-4> :buffer4<CR>
-    nnoremap <M-5> :buffer5<CR>
-    nnoremap <M-6> :buffer6<CR>
-    nnoremap <M-7> :buffer7<CR>
-    nnoremap <M-8> :buffer8<CR>
-    nnoremap <M-9> :buffer9<CR>
+    "  (linux, win)
+    " nnoremap <M-Tab> :bnext<CR>
+    " nnoremap <M-S-Tab> :bprev<CR>
+    " nnoremap <M-1> :buffer1<CR>
+    " nnoremap <M-2> :buffer2<CR>
+    " nnoremap <M-3> :buffer3<CR>
+    " nnoremap <M-4> :buffer4<CR>
+    " nnoremap <M-5> :buffer5<CR>
+    " nnoremap <M-6> :buffer6<CR>
+    " nnoremap <M-7> :buffer7<CR>
+    " nnoremap <M-8> :buffer8<CR>
+    " nnoremap <M-9> :buffer9<CR>
+    "  (macosx)
+    nnoremap ¡ :buffer1<CR>
+    nnoremap ™ :buffer2<CR>
+    nnoremap £ :buffer3<CR>
+    nnoremap ¢ :buffer4<CR>
+    nnoremap ∞ :buffer5<CR>
+    nnoremap § :buffer6<CR>
+    nnoremap ¶ :buffer7<CR>
+    nnoremap • :buffer8<CR>
+    nnoremap ª :buffer9<CR>
+
 
     " Indentation settings
     filetype plugin indent on
@@ -116,10 +129,16 @@ runtime! archlinux.vim
     set splitright
 
     " Split navigations (through Alt key)
-    nnoremap <M-j> <C-W><C-J>
-    nnoremap <M-k> <C-W><C-K>
-    nnoremap <M-l> <C-W><C-L>
-    nnoremap <M-h> <C-W><C-H>
+    "  (linux, win)
+    " nnoremap <M-j> <C-W><C-J>
+    " nnoremap <M-k> <C-W><C-K>
+    " nnoremap <M-l> <C-W><C-L>
+    " nnoremap <M-h> <C-W><C-H>
+    "  (macosx)
+    nnoremap ∆ <C-W><C-J>
+    nnoremap ˚ <C-W><C-K>
+    nnoremap ¬ <C-W><C-L>
+    nnoremap ˙ <C-W><C-H>
 
     " Allow closing bueffer without closing splits
     "nmap .d :b#<bar>bd#<CR>
@@ -247,7 +266,8 @@ runtime! archlinux.vim
         let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
         let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
         Plug 'SirVer/ultisnips'
-        let g:UltiSnipsExpandTrigger="<M-i>"
+        " let g:UltiSnipsExpandTrigger="<M-i>"
+        let g:UltiSnipsExpandTrigger="ˆ"
         let g:UltiSnipsJumpForwardTrigger="<c-b>"
         let g:UltiSnipsJumpBackwardTrigger="<c-z>"
         Plug 'honza/vim-snippets'
@@ -284,5 +304,6 @@ runtime! archlinux.vim
     endif
     set termguicolors
     set background=dark
-    colorscheme gruvbox
+    " colorscheme vimspectr30-dark
+    colorscheme solarized
 
